@@ -31,8 +31,9 @@ jobs:
 
       - name: Deploy to S3
         run: |
-          aws s3 sync . s3://dog-toys-site --delete \
+          aws s3 sync . s3://jourbee --delete \
             --exclude ".git/*" \
             --exclude ".github/*" \
             --exclude "greeting/*" \
             --exclude "README.md"
+        working-directory: jourbee-seo
