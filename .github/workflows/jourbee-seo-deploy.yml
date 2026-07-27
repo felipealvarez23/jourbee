@@ -6,11 +6,7 @@ on:
       - trunk
     paths:
       - jourbee-seo/**
-  pull_request:
-    branches:
-      - trunk
-    paths:
-      - jourbee-seo/**    
+  workflow_dispatch:
 
 permissions:
   id-token: write   # 🔥 necesario para OIDC
@@ -23,6 +19,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+
+      - name: Debug OIDC claims
+        uses: github/actions-oidc-debugger@v1
 
       - name: Configure AWS credentials (OIDC)
         uses: aws-actions/configure-aws-credentials@v4
