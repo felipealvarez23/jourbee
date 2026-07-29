@@ -3,11 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jourbee</title>
+    <meta name="description" content="The smart way to plan your next journey">
+    <title>Jourbee | Plane your next trip</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Jourbee",
+        "url": "https://jourbee.co"
+        }
+    </script>
 </head>
 <body>
+    <header class="header">
+        <a href="" class="logo">jourbee</a>
+        <button class="menu-button" aria-label="Open navigation">
+            <i data-lucide="menu"></i>
+        </button>
+    </header>
     <main>
-    <h1>Hello world!!</h1>
+
     </main>
+    <nav class="bottom-nav">
+        <a href="/" class="nav-item active">
+            <i data-lucide="house"></i>
+            <span>Home</span>
+        </a>
+        <a href="/explore" class="nav-item">
+            <i data-lucide="compass"></i>
+            <span>Explore</span>
+        </a>
+        <a href="/trips.html" class="nav-item">
+            <i data-lucide="map"></i>
+            <span>Trips</span>
+        </a>
+        <a href="/saved" class="nav-item">
+            <i data-lucide="heart"></i>
+            <span>Saved</span>
+        </a>
+    </nav>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>
