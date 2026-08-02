@@ -19,13 +19,40 @@
     </script>
 </head>
 <body>
-    <header class="header">
+    <header class="header">  
         <a href="" class="logo">jourbee</a>
         <button class="menu-button" aria-label="Open navigation">
             <i data-lucide="menu"></i>
         </button>
     </header>
     <main>
+        <section class="hero">
+
+            <div class="hero-image">
+                <picture>
+                    <source srcset="assets/images/hero.avif" type="image/avif">
+                    <source srcset="assets/images/hero/hero.webp" type="image/webp">
+                    <img
+                        src="assets/images/hero/hero.webp"
+                        alt="A sunny sunset in Villa de Leyva, Colombia"
+                        width="768"
+                        height="1365"
+                        loading="eager"
+                        fetchpriority="high">
+                </picture>
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Discover your next journey</h1>
+                <p>
+                    The smart way to discover unforgettable travel experiences.
+                </p>
+                <a href="#" class="btn-primary">
+                    Start exploring →
+                </a>
+            </div>
+
+        </section>
 
     </main>
     <nav class="bottom-nav">

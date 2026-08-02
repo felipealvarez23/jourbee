@@ -1,0 +1,55 @@
+.menu-button {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color .2s ease;
+}
+
+.menu-button:hover {
+    background:rgba(255,255,255,.12);
+}
+
+.menu-button:active {
+    background: #EEEEEE;
+}
+
+.btn-primary{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:max-content;
+
+    margin:auto;
+
+    padding:16px 34px;
+
+    border-radius:999px;
+
+    background:#FFC83D;
+
+    color:#111;
+
+    font-weight:700;
+
+    text-decoration:none;
+
+    transition:.25s;
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 12px 28px rgba(0,0,0,.25);
+}

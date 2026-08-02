@@ -1,0 +1,9 @@
+body{
+    font-family: 'Inter', sans-serif;
+    color:#111111;
+    background:#FFFFFF;
+    line-height:1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-bottom: 90px;
+}
