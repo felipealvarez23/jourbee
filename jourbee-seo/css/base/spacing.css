@@ -1,0 +1,23 @@
+.section{
+
+    padding:72px 24px;
+
+}
+
+.section-sm{
+
+    padding:48px 24px;
+
+}
+
+.section-lg{
+
+    padding:96px 24px;
+
+}
+
+.container{
+    width:100%;
+    padding-inline:24px;
+    margin-inline:auto;
+}
