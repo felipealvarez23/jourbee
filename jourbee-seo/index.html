@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
     <script type="application/ld+json">
         {
         "@context": "https://schema.org",
@@ -18,8 +21,9 @@
         }
     </script>
 </head>
+
 <body>
-    <header class="header">  
+    <header class="header">
         <a href="" class="logo">jourbee</a>
         <button class="menu-button" aria-label="Open navigation">
             <i data-lucide="menu"></i>
@@ -29,15 +33,10 @@
         <section class="hero">
             <div class="hero-image">
                 <picture>
-                    <source srcset="assets/images/hero/hero2.avif" type="image/avif">
-                    <source srcset="assets/images/hero/hero2.webp" type="image/webp">
-                    <img
-                        src="assets/images/hero/hero2.webp"
-                        alt="A sunny sunset"
-                        width="768"
-                        height="1365"
-                        loading="eager"
-                        fetchpriority="high">
+                    <source srcset="assets/images/hero/hero.avif" type="image/avif">
+                    <source srcset="assets/images/hero/hero.webp" type="image/webp">
+                    <img src="assets/images/hero/hero.webp" alt="A sunny sunset" width="768" height="1365"
+                        loading="eager" fetchpriority="high">
                 </picture>
             </div>
             <div class="hero-overlay"></div>
@@ -59,71 +58,141 @@
                 <div class="section-header">
                     <span class="eyebrow">
                         <i data-lucide="globe"></i>
-                        <span>Popular destinations </span>   
+                        <span>Popular destinations </span>
                     </span>
                     <h2>Discover destinations</h2>
                     <p>Handpicked places to inspire your next unforgettable journey.</p>
                 </div>
 
                 <div class="destination-list">
-                    <article class="card destination-card">
-                        <a href="/destionations/capadocia">
-                            <picture>
-                                <img
-                                    src="assets/images/destinations/Capadocia.webp"
-                                    alt="Landscape of Capadocia"
-                                    width="640"
-                                    height="800"
-                                    loading="lazy"> 
-                            </picture>
-                            <div class="destination-content">
-                                <h3>Cappadocia</h3>
-                                <p>Balloons & fairy chimneys</p>
-                            </div>
-                            <span class="destination-arrow">
-                                <i data-lucide="arrow-right"></i>
+                    <article class="card card--activity">
+
+                        <div class="card__media">
+                            <img src="assets/images/activities/rafting.webp" alt="Rafting en el río Fonce, San Gil"
+                                class="card__image">
+
+                            <span class="badge badge--success">
+                                Most booked
                             </span>
-                        </a>        
-                    </article>
-                    <article class="card destination-card">
-                        <a href="/destionations/japan">
-                            <picture>
-                                <img
-                                    src="assets/images/destinations/Japon.webp"
-                                    alt="Landscape of Japan"
-                                    width="640"
-                                    height="800"
-                                    loading="lazy"> 
-                            </picture>
-                            <div class="destination-content">
-                                <h3>Japan</h3>
-                                <p>Mount Fuji & timeless temples</p>
+
+                            <button class="card__favorite" aria-label="Save activity">
+                                <i data-lucide="heart"></i>
+                            </button>
+                        </div>
+
+                        <div class="card__content">
+
+                            <h3 class="card__title">
+                                Rafting on the Fonce River
+                            </h3>
+
+                            <div class="card__location">
+                                <i data-lucide="map-pin"></i>
+                                <span>San Gil, Santander</span>
                             </div>
-                            <span class="destination-arrow">
-                                <i data-lucide="arrow-right"></i>
-                            </span>
-                        </a>        
-                    </article>
-                    <article class="card destination-card">
-                        <a href="/destionations/colombia">
-                            <picture>
-                                <img
-                                    src="assets/images/destinations/colombia.webp"
-                                    alt="Landscape of Colombia"
-                                    width="640"
-                                    height="800"
-                                    loading="lazy"> 
-                            </picture>
-                            <div class="destination-content">
-                                <h3>Colombia</h3>
-                                <p>Coffee & Nature</p>
+
+                            <div class="card__footer">
+
+                                <div class="card__rating">
+                                    <i data-lucide="star"></i>
+                                    <span>4.8</span>
+                                    <small>(128)</small>
+                                </div>
+
+                                <div class="card__price">
+                                    <small>From</small>
+                                    <strong>$120</strong>
+                                </div>
+
                             </div>
-                            <span class="destination-arrow">
-                                <i data-lucide="arrow-right"></i>
-                            </span>
-                        </a>        
+
+                        </div>
+
                     </article>
-                </div>        
+                    <article class="card card--activity">
+
+                        <div class="card__media">
+                            <img src="assets/images/activities/cocuy.webp" alt="Trekking in El Cocuy National Park"
+                                class="card__image">
+
+                            <button class="card__favorite" aria-label="Save activity">
+                                <i data-lucide="heart"></i>
+                            </button>
+                        </div>
+
+                        <div class="card__content">
+
+                            <h3 class="card__title">
+                                El Cocuy Glacier Trek
+                            </h3>
+
+                            <div class="card__location">
+                                <i data-lucide="map-pin"></i>
+                                <span>El Cocuy, Boyacá</span>
+                            </div>
+
+                            <div class="card__footer">
+
+                                <div class="card__rating">
+                                    <i data-lucide="star"></i>
+                                    <span>4.9</span>
+                                    <small>(214)</small>
+                                </div>
+
+                                <div class="card__price">
+                                    <small>From</small>
+                                    <strong>$380</strong>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+                    <article class="card card--activity">
+
+                        <div class="card__media">
+                            <img src="assets/images/activities/pandora.webp" alt="Rappel at Corazón del Mundo, Bosques de Pandora"
+                                class="card__image">
+                            <span class="badge badge--success">
+                                Hidden Gem
+                            </span>    
+
+                            <button class="card__favorite" aria-label="Save activity">
+                                <i data-lucide="heart"></i>
+                            </button>
+                        </div>
+
+                        <div class="card__content">
+
+                            <h3 class="card__title">
+                                Rappel at Corazón del Mundo
+                            </h3>
+
+                            <div class="card__location">
+                                <i data-lucide="map-pin"></i>
+                                <span>Los Santos · Santander</span>
+                            </div>
+
+                            <div class="card__footer">
+
+                                <div class="card__rating">
+                                    <i data-lucide="star"></i>
+                                    <span>4.9</span>
+                                    <small>(94)</small>
+                                </div>
+
+                                <div class="card__price">
+                                    <small>From</small>
+                                    <strong>$180</strong>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>                                         
+                </div>
             </div>
 
         </section>
@@ -152,4 +221,5 @@
         lucide.createIcons();
     </script>
 </body>
+
 </html>
